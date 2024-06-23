@@ -1,7 +1,6 @@
 import { Hono } from "hono";
 import { z } from "zod";
 import { zValidator } from "@hono/zod-validator";
-import { visitCommaListElements } from "typescript";
 
 const expenseSchema = z.object({
   id: z.number().int().positive().min(1),
